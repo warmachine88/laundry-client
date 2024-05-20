@@ -30,8 +30,8 @@ const Navbar = () => {
         <div className='navbar-comp'>
             <nav>
                 <div className="logo">
-                    {/* <img src="./img/laundry-logo.png" alt="" /> */}
-                    <h1 className='text-white text-3xl font-bold'>LaundryGrab</h1>
+                    <img src="./img/lg-logo2.png" alt="" /> 
+                    <h1 className='text-white text-3xl font-thin ml-2'>LaundryGrab</h1>
                 </div>
                 <div className={`links ${showLinks ? 'show' : ''}`}>
                     <li>
