@@ -1,0 +1,98 @@
+.sidebar-admin {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    color: var(--var-bg-txt);
+    /* background: var(--var-bg); */
+
+    .logo-title {
+        width: 100%;
+        height: 60px;
+        background: var(--var-bg);
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+        border-radius: 6.5px;
+    }
+    ul {
+        display: grid;
+        background: var(--var-bg);
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+        border-radius: 6.5px;
+
+        .link-door {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            // align-items: center;
+            // justify-content: space-evenly;
+            & > * {
+                align-self: center;
+                justify-self: center;
+            }
+            height: 50px;
+            h5 {
+                cursor: pointer;
+                width: 100%;
+                text-align: left;
+            }
+        }
+    }
+    .settings-dash {
+        border-radius: 6.5px;
+
+        width: 100%;
+        padding: 20px;
+        height: 300px;
+        background: var(--var-bg);
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        .set-body {
+            border-radius: 15px;
+            background: var(--var-bg-set);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            height: 75%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            .chg-color {
+                position: absolute;
+                top: -25%;
+                left: 35%;
+                width: 80px;
+                height: 80px;
+                // background: #ffae3c;
+                background: var(--var-st);
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                svg {
+                    width: 25.6px;
+                    height: 25.6px;
+                }
+            }
+            .theme-set {
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                border-radius: 7.5px;
+                color: #fff;
+                width: 100%;
+                cursor: pointer;
+                background: var(--var-button-st);
+                padding: 6.5px 10px;
+            }
+
+        }
+
+    }
+    /* display: grid; */
+    /* gap: 10px; */
+
+}
