@@ -1,0 +1,151 @@
+.books-admin {
+    padding: 15px;
+    h1 {
+        color: var(--var-bg-txt);
+        font-size: 25px;
+        width: 100%;
+        text-align: left;
+    }
+    .headbar {
+        width: 100%;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .pages {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 200px;
+            height: 37.5px;
+            padding: 5px;
+            border-radius: 10px;
+            color: var(--var-button-st);
+            background: var(--var-bg-set);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                
+        }
+        .search-bar {
+            input {
+                color: #fff;
+                outline: none;
+                width: 200px;
+                height: 37.5px;
+                padding: 5px;
+                border-radius: 10px;
+                background: var(--var-bg-set);
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                &::placeholder {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .editor {
+        padding: 10px;
+        h2 {
+            width: 100%;
+            text-align: left;
+            color: var(--var-bg-txt);
+        }
+        form {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 10px;
+            .form-group {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 30%;
+                height: 45px;
+                border-radius: 7.5px;
+                input,select {
+                    border-radius: 7.5px;   
+                    outline: none;
+                    box-shadow: 0px 2px 2px 0px rgba(32, 32, 32, 0.25);
+                    background: var(--var-bg-set);
+                    width: 100%;
+                    height: 100%;
+                    padding: 5px;
+                    color: var(--var-bg-txt);
+                    
+                    &::placeholder {
+                        color: var(--var-bg-txt);
+                    }
+                }
+
+                .btn-success {
+                    padding: 7.5px;
+                    border-radius: 5px;
+                    background: rgb(100, 197, 30);
+                    box-shadow: 0px 2px 2px 0px rgba(32, 32, 32, 0.25);
+
+                }
+            }
+            .grid-form {
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 5px;height: auto;
+                select {
+                    width: 100%;
+                }
+            }
+            .button-side {
+                color: var(--var-bg-txt);
+                justify-content: flex-start;
+                width: auto;
+            }
+            // grid-template-columns: 50% 50%;
+        }
+    }
+
+    .list-account-section {
+        border-radius: 20px;
+        background: var(--var-bg-set);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        min-height: 700px;
+        padding: 15px;
+        color: var(--var-bg-txt);
+
+        // YourComponent.scss
+
+        .list-account-table {
+            margin-top: 20px; // Add any margin or padding you desire
+            table {
+                width: 100%;
+                border-collapse: collapse;
+
+                th, td {
+                    padding: 10px;
+                    text-align: left;
+                    border: 1px solid #000;
+                }s
+
+                th {
+                    background-color: #343a40; // Dark background color for the header
+                    color: #fff; // Text color for the header
+                }
+                .th-edit {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    svg {
+                        cursor: pointer;
+                    }
+                }
+
+                tr:nth-child(even) {
+                    border-radius: 7.5px;
+                    // background: rgba(186, 214, 255, 0.53);
+                }
+
+            }
+        }
+        
+
+    }
+}

@@ -1,0 +1,165 @@
+.navbar-comp {
+    padding: 15px 5vw;
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    nav {
+        width: 100%;
+        height: 65px;
+        // background: rgba(77, 137, 226, 0.702);
+        background: linear-gradient(90deg,rgba(77, 137, 226, 0.25) 0%, rgba(77, 137, 226, 0.5) 100%);
+        box-shadow: 0 2px 3px rgba(92, 92, 92, 0.468);
+
+        display: flex;
+        border-radius: 7.5px;
+        align-items: center;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        
+            img {
+                object-fit: cover;
+                width: 60px;
+                height: 60px;
+            }
+        }
+        .links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            li {
+                border-radius: 5px;
+                padding: 5px 20px;
+                a {
+                    color: #fff;
+                }
+                transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+                &:hover {
+                    background: rgba(234, 234, 234, 0.65);
+                }
+            }
+        }
+
+
+        .hamburger {
+            display: none;
+        }
+
+        @media (max-width:768px) {
+            .hamburger {
+                display: flex;
+            }
+            .links {
+                z-index: 3;
+                display: none;
+                &.show {
+                    display: inline-block;
+                }
+                position: absolute;
+                top: 80px;
+                background: rgba(109, 153, 220, 0.808);
+                left: 0;
+                width: 100%;
+                padding: 10px;
+                li {
+                    padding: 10px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 1.5px;
+                        background: #fff;
+                    }
+                }
+            }
+        }
+
+        .profile {
+            color: #fff;
+            width: 137px;
+            padding: 10px;
+            position: relative;
+            // background:orange;
+            h4 {
+                font-size: 15px;
+            }
+
+            svg {
+                cursor: pointer;
+                width: 27.5px;
+                height: 27.5px;
+
+                transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+                &:hover {
+        
+                }
+            }
+
+            .drop-profile {
+                display: none;
+                &.show {
+                    display: inline-grid;
+                }
+                // align-items:center;
+                // justify-content:center;
+                position: absolute;
+                // background
+                gap: 10px;
+                left: 0%;
+                top: 57px;
+                padding: 10px;
+                width: 100%;
+                // height: ;
+                box-shadow: 0 2px 3px rgba(92, 92, 92, 0.468);
+                background: rgba(109, 153, 220, 0.5);
+                color: #fff;
+                .drops-item {
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 35px;
+                    // background:orange;
+                    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 1px;
+                        background: #fff;
+                    }
+                    &:hover::after {
+                        background: rgb(255, 225, 0);
+                    }
+                    &:hover {
+                        background: rgba(234, 234, 234, 0.65);
+                    }
+                }
+            }
+        }
+    }
+}

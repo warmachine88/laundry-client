@@ -1,0 +1,146 @@
+.register-component {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background: url(../../../public/img/laundry.jpg) 50% 50% / cover no-repeat; */
+    display: flex;
+    background: #E0E5EC;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    .circles {
+        z-index: 0;
+        position: absolute;
+        width: 19.5vw;
+        height: 19.5vw;
+        border-radius: 50%;
+        background: linear-gradient(180deg, #9ACFFF 0%, rgba(154, 207, 255, 0.00) 100%);
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.193);
+
+        &.tp1 {
+            top: 7.5%;
+            left: 18%;
+        }
+        &.tp2 {
+            width: 15.5vw;
+            height: 15.5vw;
+            bottom: 15%;
+            right: 25%;
+        }
+        &.tp3 {
+            width:22.5vw;
+            height:22.5vw;
+            bottom: 12%;
+            left: 22%;
+        }
+        &.tp4 {
+            top: 2%;
+            right: 27%;
+        }
+    }
+
+    .container {
+        padding: 20px;
+        /* border-radius: 10px;  */
+        text-align: center;
+        /* width: 350px;  */
+        z-index: 1;
+        position: relative;
+        backdrop-filter: blur(7.5px);
+        &::after {
+            z-index: -1;
+            left: 0;
+            top: 0;
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            opacity: 0.3;
+            border-radius: 10px;
+            background: #E0E5EC;
+            box-shadow: -5px -5px 5px 0px rgba(255, 255, 255, 0.80), -5px -5px 5px 0px rgba(255, 255, 255, 0.80), 4px 4px 10px 0px rgba(0, 0, 0, 0.25), 4px 4px 10px 0px rgba(0, 0, 0, 0.25), 4px 4px 10px 0px rgba(0, 0, 0, 0.25), 4px 4px 10px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        img {
+            max-width: 150px; /* Reduce logo size */
+            margin-bottom: 20px; /* Increase space after logo */
+        }
+
+        h1 {
+        color: #8CBAFF;
+        font-size: 24px;
+        margin-bottom: 20px; /* Increase space after heading */
+        }
+
+        .input-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        p.error-message {
+            color: red;
+        }
+
+        form {
+            display: grid;
+            gap: 14.5px;
+        }
+
+        .login-fill {
+            color: #0056b3;
+        }
+
+        .dp-inp {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+            &::after {
+                z-index: -1;
+                left: 0;
+                top: 0;
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                opacity: 0.3;
+                border-radius: 10px;
+                background: #E0E5EC;
+                box-shadow: -5px -5px 5px 0px rgba(255, 255, 255, 0.80), -5px -5px 5px 0px rgba(255, 255, 255, 0.80), 4px 4px 10px 0px rgba(0, 0, 0, 0.25), 4px 4px 10px 0px rgba(0, 0, 0, 0.25), 4px 4px 10px 0px rgba(0, 0, 0, 0.25), 4px 4px 10px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                backdrop-filter: blur(50px);
+            }
+        }
+        input {
+            padding: 20px;
+            outline: none;
+            border: 0px;
+            width: 100%;
+            height: 50px;
+            background: none;
+        }
+
+        button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        margin: 15px auto 0;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #0056b3;
+        }
+        }
+
+        p {
+        margin-top: 15px;
+        font-size: 14px;
+        }
+    }
+}
