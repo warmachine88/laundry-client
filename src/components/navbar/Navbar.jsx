@@ -44,11 +44,11 @@ const Navbar = () => {
                             <h5> About Us </h5>
                         </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link to={'/book'}> 
                             <h5> Book </h5>
                         </Link>
-                    </li>
+                    </li> */}
                     <li>
                         <Link to={'/contact'}> 
                             <h5> Contact </h5>

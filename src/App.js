@@ -53,7 +53,7 @@ function App() {
           <Route path='/admin' element={<AdminComponent/>} ></Route>
           <Route path='/' element={<Home/>} ></Route>
           <Route path='/about' element={<About/>} ></Route>
-          <Route path='/book' element={<Books/>}></Route>
+          <Route path='/book/:shopId' element={<Books/>}></Route>
           <Route path='/carts' element={<BooksOrder/>}></Route>
           <Route path='/service' element={<Services/>}></Route>
           <Route path='/contact' element={<Contact/>}></Route>

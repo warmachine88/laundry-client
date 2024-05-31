@@ -342,7 +342,7 @@ const Home = () => {
                     </div>
                 </section>
                 
-                <section>
+                {/* <section>
                     <div className="book-section">
                         <div className="line"></div>
                         {
@@ -499,7 +499,7 @@ const Home = () => {
                             </div>
                         </form>
                     </div>
-                </section>
+                </section> */}
                 
                 <section className="contact-us">
                     <div className="bg-img">
