@@ -24,6 +24,13 @@ function LoginForm() {
             console.log(data)
             if (data.userProfile.id) {
                 localStorage.setItem("userToken", data.token);
+                localStorage.setItem("email", data.userProfile.email);
+                localStorage.setItem("id", data.userProfile.id);
+                localStorage.setItem("contact_no", data.userProfile.contact_no);
+                localStorage.setItem("firstname", data.userProfile.firstname);
+                localStorage.setItem("lastname", data.userProfile.lastname);
+                localStorage.setItem("type", data.userProfile.type);
+
                 console.log(data)
 
                 fetch('http://localhost:5000/users/getUserByToken', {
